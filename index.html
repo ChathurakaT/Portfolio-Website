@@ -19,8 +19,8 @@
                     <li><a href="#services">Service</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
@@ -33,7 +33,7 @@
 
     <!--ABOUT SECTION-->
 <div id="about">
-    <div class="containor">
+    <div class="container">
         <div class="row">
             <div class="about-col-1">
                 <img src="Images/my.jpg" alt="SOLO" style="width: 664px; height: 670px;">
@@ -45,21 +45,21 @@
 
                      <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                      </div>
                      <div class="tab-contents active-tab" id="Skills">
                         <ul>
                             <li><span>Ux/UI</span><br>Design Web/App Interface</li>
                             <li><span>Web Development</span><br>web App Development</li>
-                            <li><span>App Development</span><br>Building Andriod/ios Apps</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
                         </ul>
                      </div>
-                     <div class="tab-contents" id="experince">
+                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>2017-2020</span><br>AL's in Commerce Stream</li>
                             <li><span>2021-2025</span><br>Following Software engineering Degree</li>
-                            <li><span>2021</span><br>Following Full stack development course in  university of Moratuwa</li>
+                            <li><span>2021</span><br>Following Full stack development course in university of Moratuwa</li>
                         </ul>
                      </div>
                      <div class="tab-contents" id="education">
@@ -120,7 +120,7 @@
     <h1 class="sub-title">My Work</h1>
     <div class="work-list">
         <div class="work">
-            <img src="Images/Travel website.jpg" alt="work01">
+            <img src="Images/Travel%20website.jpg" alt="work01">
             <div class="layer">
                 <h3>Travel Destination Website</h3>
                 <p>Discover the world with our expertly designed travel destination website.</p>
@@ -128,15 +128,15 @@
             </div>
         </div>
         <div class="work">
-            <img src="Images/Hotel booking app.jpg" alt="work02">
+            <img src="Images/Hotel%20booking%20app.jpg" alt="work02">
             <div class="layer">
                 <h3>Hotel Booking Mobile Application</h3>
-                <p>Discover the perfect stay with our hotel booking mobile application, designed to make finding and booking accommodations effortless. </p>
+                <p>Discover the perfect stay with our hotel booking mobile application, designed to make finding and booking accommodations effortless.</p>
                 <a href=""><i class="fa-solid fa-link"></i></a>
             </div>
         </div>
         <div class="work">
-            <img src="Images/Library mangemnt system.jpg" alt="work03">
+            <img src="Images/Library%20management%20system.jpg" alt="work03">
             <div class="layer">
                 <h3>Library Management System</h3>
                 <p>Streamline your library operations with our advanced Library Management System.</p>
@@ -169,7 +169,7 @@
             <form name="submit-to-google-sheet">
                 <input type="text" name="Name" placeholder="Your name" required>
                 <input type="email" name="Email" placeholder="Your Email" required>
-                <textarea name="Massege" rows="6" placeholder="Your Massege"></textarea>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                 <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
@@ -221,7 +221,7 @@ document.getElementById(tabname).classList.add("active-tab");
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Massage sent successfully"
+            msg.innerHTML = "Message sent successfully"
             setTimeout(function(){
                 msg.innerHTML = ""
             },5000)
